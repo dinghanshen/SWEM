@@ -1,6 +1,6 @@
 # SWEM (Simple Word-Embedding-based Models)
 
-This repository contains source code necessary to reproduce the results presented in the paper:
+This repository contains source code necessary to reproduce the results presented in the following paper:
 * Baseline Needs More Love: On Simple Word-Embedding-Based Models and Associated Pooling Mechanisms (ACL 2018)
 
 This project is maintained by [Dinghan Shen](https://sites.google.com/view/dinghanshen). Feel free to contact dinghan.shen@duke.edu for any relevant issue.
@@ -26,7 +26,7 @@ This project is maintained by [Dinghan Shen](https://sites.google.com/view/dingh
 * On a K80 GPU machine, training roughly takes about 3min each epoch and 5 epochs for Debpedia to converge, takes 50s each epoch and 20 epochs for SNLI, and 4min each epoch and 5 epochs for the Yahoo dataset.
 
 ## Data: 
-* Download from the links below and put them into a `data` folder:
+* For convenience, we provide pre-processed versions for the following datasets: DBpedia, SNLI, Yahoo. Data are prepared in pickle format. Each `.p` file has the same fields in same order: `train text`, `val text`, `test text`, `train label`, `val label`, `test label`, `dictionary` and `reverse dictionary`. These `.p` files can be downloaded from the links below. After downloading, you can put them into a `data` folder:
 	* Ontology classification: [DBpedia (591MB)](https://drive.google.com/open?id=1EBmMise0LQu0QpO7T4a32WMFuTxAb6T0)
 	* Natural language inference: [SNLI (101MB)](https://drive.google.com/open?id=1M13UswHThZYt-ARrHg6sN7Dlel-d6BB3)
 	* Topic categorization: [Yahoo (1.7GB)](https://drive.google.com/open?id=1Dorz_CWZkHHpojVS4K4YUEhhczVLQgRc)
