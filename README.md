@@ -1,7 +1,9 @@
 # SWEM (Simple Word-Embedding-based Models)
 
 This repository contains source code necessary to reproduce the results presented in the paper:
-[Baseline Needs More Love: On Simple Word-Embedding-Based Models and Associated Pooling Mechanisms] (ACL 2018):
+* Baseline Needs More Love: On Simple Word-Embedding-Based Models and Associated Pooling Mechanisms (ACL 2018)
+
+This project is maintained by [Dinghan Shen](https://sites.google.com/view/dinghanshen). Feel free to contact dinghan.shen@duke.edu for any relevant issue.
 
 ## Prerequisite: 
 * CUDA, cudnn
@@ -41,4 +43,4 @@ booktitle={ACL},
 year={2018} 
 }
 ```
-For any question or suggestions, feel free to contact dinghan.shen@duke.edu
+
