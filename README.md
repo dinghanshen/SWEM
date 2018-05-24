@@ -11,7 +11,9 @@ This project is maintained by [Dinghan Shen](https://sites.google.com/view/dingh
 * Run: `pip install -r requirements.txt` to install requirements
 
 ## Data: 
-* For convenience, we provide pre-processed versions for the following datasets: DBpedia, SNLI, Yahoo. Data are prepared in pickle format. Each `.p` file has the same fields in same order: `train_text`, `val_text`, `test_text`, `train_label`, `val_label`, `test_label`, `dictionary (wordtoix)` and `reverse dictionary (ixtoword)`. These `.p` files can be downloaded from the links below. After downloading, you can put them into a `data` folder:
+* For convenience, we provide pre-processed versions for the following datasets: DBpedia, SNLI, Yahoo. Data are prepared in pickle format, adn each `.p` file has the same fields in the same order: 
+	* `train_text`, `val_text`, `test_text`, `train_label`, `val_label`, `test_label`, `dictionary (wordtoix)`, `reverse dictionary (ixtoword)`
+These `.p` files can be downloaded from the links below. After downloading, you can put them into a `data` folder:
 
  	* Ontology classification: [DBpedia (591MB)](https://drive.google.com/open?id=1EBmMise0LQu0QpO7T4a32WMFuTxAb6T0)
 
