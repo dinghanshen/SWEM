@@ -1,0 +1,5 @@
+*.pyc
+/build
+/MANIFEST
+/dist
+/GitResultsManager.egg-info

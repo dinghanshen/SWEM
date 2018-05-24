@@ -1,0 +1,5 @@
+v0.0, October 28, 2012 -- First release
+v0.1, October 29, 2012 -- First distutils version
+v0.2, September 20, 2013 -- Stable version
+v0.3.0, October 2, 20187 -- Cleanup; restructured layout.
+v0.3.1, October 2, 20187 -- Bug fix; added pip.

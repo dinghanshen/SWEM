@@ -1,0 +1,16 @@
+#! /bin/bash
+
+if [ "$1" != "" ]; then
+    #echo "got arg, using file"
+    resman-td "$1"
+else
+    if [[ -p /dev/stdin ]]; then
+        #echo "stdin is coming from a pipe"
+        cat | resman-td
+    else
+        if [[ -t 0 ]]; then
+            #echo "stdin is coming from the terminal; use clipboard"
+            resman-td <(pbpaste)
+        fi
+    fi
+fi

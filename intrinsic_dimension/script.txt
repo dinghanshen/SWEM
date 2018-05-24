@@ -1,0 +1,11 @@
+python ./train.py dataset/mnist/train.h5 dataset/mnist/test.h5 -E 100 --opt adam --lr 0.001 --l2 1e-05 --arch mnistfc_dir --depth 2 --width 200
+
+python ./train.py dataset/mnist/train.h5 dataset/mnist/test.h5 -E 100 --opt adam --lr 0.001 --l2 1e-05 --arch mnistfc --depth 2 --width 200 --vsize 1000 --fastfoodproj
+
+
+
+
+
+
+
+python ./train_text.py dataset/mnist/train.h5 dataset/mnist/test.h5 -E 100 --opt adam --lr 0.001 --l2 1e-05 --arch mnistfc_dir --depth 2 --width 200

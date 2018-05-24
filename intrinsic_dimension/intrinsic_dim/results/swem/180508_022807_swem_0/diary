@@ -1,0 +1,18 @@
+18.05.08.02.28.07.459 * WARNING: GitResultsManager running in GIT_DISABLED mode: no git information saved! (Is /home/ds337/others/intrinsic_dim-lrb/intrinsic_dim in a git repo?)
+18.05.08.02.28.07.460     Logging directory: results/swem/180508_022807_swem_0
+18.05.08.02.28.07.460    Raw entire command: /usr/local/bin/resman -d results/swem -r swem_0 -- ./train.py dataset/mnist/train.h5 dataset/mnist/test.h5 -E 5 --vsize 0 --opt adam --lr 0.001 --l2 0.0001 --arch swem_dir --depth 0 --width 200
+18.05.08.02.28.07.462              Hostname: clouseau
+18.05.08.02.28.07.463     Working directory: /home/ds337/others/intrinsic_dim-lrb/intrinsic_dim
+18.05.08.02.28.08.247    Raw script command: ./train.py dataset/mnist/train.h5 dataset/mnist/test.h5 -E 5 --vsize 0 --opt adam --lr 0.001 --l2 0.0001 --arch swem_dir --depth 0 --width 200
+18.05.08.02.28.08.248        Script command: ./train.py dataset/mnist/train.h5 dataset/mnist/test.h5 -E 5 --vsize 0 --opt adam --lr 0.001 --l2 0.0001 --arch swem_dir --depth 0 --width 200
+18.05.08.02.28.08.248   
+18.05.08.02.28.08.252 * Traceback (most recent call last):
+18.05.08.02.28.08.253 *   File "/usr/local/bin/resman", line 72, in <module>
+18.05.08.02.28.08.253 *     main()
+18.05.08.02.28.08.253 *   File "/usr/local/bin/resman", line 39, in main
+18.05.08.02.28.08.253 *     proc = subprocess.Popen(args.command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+18.05.08.02.28.08.253 *   File "/usr/lib/python2.7/subprocess.py", line 711, in __init__
+18.05.08.02.28.08.254 *     errread, errwrite)
+18.05.08.02.28.08.254 *   File "/usr/lib/python2.7/subprocess.py", line 1343, in _execute_child
+18.05.08.02.28.08.254 *     raise child_exception
+18.05.08.02.28.08.254 * OSError: [Errno 13] Permission denied

@@ -1,0 +1,14 @@
+[Fri 2017-10-06  8:12:34 pm]
+zero_out
+ - An example op from https://www.tensorflow.org/extend/adding_an_op
+zero_out_float
+ - Same but for floats
+fast_walsh_hadamard_inplace
+ - Version of the Fast Walsh Hadamard Transform that uses little memory. Runs on CPU, not GPU.
+
+
+Compile using "make all"
+
+
+Usage in Python:
+from ops.fwh import tf_fast_walsh_hadamard

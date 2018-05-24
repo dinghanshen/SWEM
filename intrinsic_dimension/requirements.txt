@@ -1,0 +1,7 @@
+numpy
+h5py
+IPython
+colorama
+scikit-learn
+tensorflow-gpu
+keras
