@@ -11,7 +11,7 @@ This project is maintained by [Dinghan Shen](https://sites.google.com/view/dingh
 * Run: `pip install -r requirements.txt` to install requirements
 
 ## Data: 
-* For convenience, we provide pre-processed versions for the following datasets: DBpedia, SNLI, Yahoo. Data are prepared in pickle format, adn each `.p` file has the same fields in the same order: 
+* For convenience, we provide pre-processed versions for the following datasets: DBpedia, SNLI, Yahoo. Data are prepared in pickle format, and each `.p` file has the same fields in the same order: 
 	* `train_text`, `val_text`, `test_text`, `train_label`, `val_label`, `test_label`, `dictionary(wordtoix)`, `reverse dictionary(ixtoword)`
 
 * These `.p` files can be downloaded from the links below. After downloading, you can put them into a `data` folder:
@@ -34,7 +34,7 @@ This project is maintained by [Dinghan Shen](https://sites.google.com/view/dingh
 - `opt.batch_size`: number of batch size.
 - `opt.H_dis`: the dimension of last hidden layer.
 
-* On a K80 GPU machine, training roughly takes about 3min each epoch and 5 epochs for Debpedia to converge, takes 50s each epoch and 20 epochs for SNLI, and 4min each epoch and 5 epochs for the Yahoo dataset.
+* On a K80 GPU machine, training roughly takes about 3 minutes each epoch and 5 epochs for Debpedia to converge, 50 seconds each epoch and 20 epochs for SNLI, and 4 minutes each epoch and 5 epochs for the Yahoo dataset.
 
 ## Citation 
 Please cite our paper if it helps with your research:
