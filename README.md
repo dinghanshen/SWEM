@@ -7,6 +7,7 @@ This project is maintained by [Dinghan Shen](https://sites.google.com/view/dingh
 
 ## Prerequisite: 
 * CUDA, cudnn
+* Python 2.7
 * Tensorflow (version >1.0). We used tensorflow 1.5.
 * Run: `pip install -r requirements.txt` to install requirements
 
@@ -37,7 +38,7 @@ This project is maintained by [Dinghan Shen](https://sites.google.com/view/dingh
 * On a K80 GPU machine, training roughly takes about 3 minutes each epoch and 5 epochs for Debpedia to converge, 50 seconds each epoch and 20 epochs for SNLI, and 4 minutes each epoch and 5 epochs for the Yahoo dataset.
 
 ## Citation 
-Please cite our paper if it helps with your research:
+Please cite our ACL paper in your publications if it helps your research:
 
 ```latex
 @inproceedings{Shen2018Baseline, 
