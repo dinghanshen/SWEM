@@ -30,7 +30,7 @@ This project is maintained by [Dinghan Shen](https://sites.google.com/view/dingh
 
 * Ontology classification: [DBpedia (591MB)](https://drive.google.com/open?id=1EBmMise0LQu0QpO7T4a32WMFuTxAb6T0)
 
-* Natural language inference: [SNLI (101MB)](https://drive.google.com/openid=1M13UswHThZYt-ARrHg6sN7Dlel-d6BB3)
+* Natural language inference: [SNLI (101MB)](https://drive.google.com/open?id=1M13UswHThZYt-ARrHg6sN7Dlel-d6BB3)
 
 * Topic categorization: [Yahoo (1.7GB)](https://drive.google.com/open?id=1Dorz_CWZkHHpojVS4K4YUEhhczVLQgRc)
 
