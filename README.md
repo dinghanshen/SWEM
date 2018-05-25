@@ -3,7 +3,7 @@
 This repository contains source code necessary to reproduce the results presented in the following paper:
 * [*Baseline Needs More Love: On Simple Word-Embedding-Based Models and Associated Pooling Mechanisms*](http://people.ee.duke.edu/~lcarin/acl2018_swem.pdf) (ACL 2018)
 
-This project is maintained by [Dinghan Shen](https://sites.google.com/view/dinghanshen). Feel free to contact dinghan.shen@duke.edu for any relevant issue.
+This project is maintained by [*Dinghan Shen*](https://sites.google.com/view/dinghanshen). Feel free to contact dinghan.shen@duke.edu for any relevant issues.
 
 ## Prerequisite: 
 * CUDA, cudnn
