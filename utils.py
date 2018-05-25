@@ -7,8 +7,6 @@ Baseline Needs More Love: On Simple Word-Embedding-Based Models and Associated P
 
 
 import numpy as np
-# import theano
-# from theano import config
 import tensorflow as tf
 from collections import OrderedDict
 import nltk

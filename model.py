@@ -7,8 +7,8 @@ Baseline Needs More Love: On Simple Word-Embedding-Based Models and Associated P
 
 
 import tensorflow as tf
-from tensorflow.contrib import learn
 from tensorflow.contrib import layers
+from tensorflow.contrib import learn
 from tensorflow.contrib import metrics
 from tensorflow.contrib import slim
 # from tensorflow.contrib.learn import monitors
