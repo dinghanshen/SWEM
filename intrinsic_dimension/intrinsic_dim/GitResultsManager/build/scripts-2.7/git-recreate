@@ -1,0 +1,42 @@
+#! /bin/bash
+
+changes=`git diff-index --name-only HEAD --`
+
+if [ -z "$1" ]; then
+    echo "Recreates repo at the time of a run based on the gitinfo and gitdiff files saved by GitResultsManager."
+    echo
+    echo "Usage: path/to/results/directory"
+    echo "Example: git recreate results/120328_185248_3c7a98c_master_trialrun/"
+    exit 1
+fi
+
+dir="$1"
+
+if [ -n "$changes" ]; then
+    echo "error: Your local changes to the following files would be overwritten by checkout:"
+    for line in $changes; do
+        echo "    $line"
+    done
+    echo "Please, commit your changes or stash them before you can switch branches."
+    echo "Aborting."
+    exit 1
+fi
+
+curbranch=`git branch | grep '\*' | cut -c 3-`
+if [ "$curbranch" = "(no branch)" ]; then
+    curbranch=`git rev-parse --short HEAD`
+fi
+
+if [ ! -f "$dir/gitinfo" ]; then
+    echo "$dir/gitinfo does not exist, are you sure the path is correct?"
+    exit 1
+fi
+rev=`cat $dir/gitinfo | gawk '{print $1}'`
+git checkout $rev
+if [ `cat $dir/gitdiff | wc -l` -gt 1 ]; then
+    git apply $dir/gitdiff 
+fi
+git status \
+    && echo -e "\nRecreated repository from $dir" \
+    && echo -e "To return the repository to the state you just left:\n  git checkout . && git checkout $curbranch"
+

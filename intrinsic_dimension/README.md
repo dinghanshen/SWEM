@@ -20,7 +20,7 @@ This code is based on Python 2.7, with the main dependencies: [TensorFlow==1.7.0
 
 We consider the following datasets: _AG News_  and _Yelp P._ datasets. Similar data format is described in the [main page](https://github.com/dinghanshen/SWEM).
 
-Datasets can be downloaded [here](https://drive.google.com) (zip version is 347 MB, and the full size is 1.5G).
+Datasets can be downloaded [here](https://drive.google.com/open?id=1DB-jnR0fF0vsdCEJqpU3nCDASPfDxHCN) (zip version is 347 MB, and the full size is 1.5G).
 
 Put the downloaded and unzipped data in the folder `dataset` and supply the relative path to python script when executing (see [Train models](#Train-models) for examples).
 
