@@ -7,9 +7,6 @@ There are four steps to use this codebase to reproduce the results in the paper.
 1. [Dependencies](#Dependencies)
 2. [Prepare datasets](#Prepare-datasets)
 3. [Subspace training](#Subspace-training)
-    1. [Subspace training on image classification tasks](#Subspace-training-on-image-classification-tasks)
-    2. [Subspace training on reinforcement learning tasks](#Subspace-training-on-reinforcement-learning-tasks)
-    3. [Subspace training of ImageNet classification in distributed GPUs](#Subspace-training-of-ImageNet-classification-in-distributed-GPUs)
 4. [Collect and plot results](#Collect-and-plot-results)
 
 
@@ -46,7 +43,7 @@ We construct custom keras layers for the special projection from subspace to ful
 
 For more options, please see [`standard_parser.py`](./intrinsic_dim/standard_parser.py) and [`train.py`](./intrinsic_dim/train.py).
 
-**1. Subspace training on the AG News task**
+**Subspace training on the AG News task**
 
 First, to run direct training in the full parameter space as the baseline, select an architecture with `_dir` and do not add projection type. For example, to train a SWEM model (followed by one layer MLP, please set --depth to 0 if no MLP is needed):
 ```
