@@ -18,7 +18,7 @@ This code is based on Python 2.7, with the main dependencies: [TensorFlow==1.7.0
  
 ## Prepare datasets
 
-We consider the following datasets: _AG News_  and _Yelp P._ datasets. They follow similar data format as described in the [main page](https://github.com/dinghanshen/SWEM) 
+We consider the following datasets: _AG News_  and _Yelp P._ datasets. Similar data format is described in the [main page](https://github.com/dinghanshen/SWEM).
 
 Datasets can be downloaded [here](https://drive.google.com) (zip version is 347 MB, and the full size is 1.5G).
 
@@ -75,5 +75,5 @@ _Shortcut: to skip all the work and just see the results, take a look at [this n
 
 ## Questions?
 
-Please drop us ([Chunyuan](http://chunyuan.li/) or [Dinghan](https://sites.google.com/view/dinghanshen/) )a line if you have any questions on the subspace training. For more information on implementing subspace training, please see its [github repo](https://github.com/uber-research/intrinsic-dimension).  
+Please drop us ([Chunyuan](http://chunyuan.li/) or [Dinghan](https://sites.google.com/view/dinghanshen/)) a line if you have any questions on the subspace training. For more information on implementing subspace training, please see its [github repo](https://github.com/uber-research/intrinsic-dimension).  
 
