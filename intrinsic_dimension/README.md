@@ -70,7 +70,7 @@ $ ipython notebook
 Select the `main_plots.ipynb` notebook and execute the included
 code. Note that without modification, we have copyed our extracted results into the notebook, and script will output figures in the paper. If you've run your own training and wish to plot results, you have to orgnize your results in the same format instead.
 
-_Shortcut: to skip all the work and just see the results, take a look at [this notebook with cached plots](plots/main_plots.ipynb)._
+_Shortcut: to skip all the work and just see the results, take a look at [this notebook with cached plots](/intrinsic_dim/plots/main_plots.ipynb)._
 
 
 ## Questions?
