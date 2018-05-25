@@ -38,7 +38,9 @@ This project is maintained by [Dinghan Shen](https://sites.google.com/view/dingh
 * On a K80 GPU machine, training roughly takes about 3 minutes each epoch and 5 epochs for Debpedia to converge, 50 seconds each epoch and 20 epochs for SNLI, and 4 minutes each epoch and 5 epochs for the Yahoo dataset.
 
 ## Subspace Training & Intrinsic Dimension
-To measure the [`intrinsic dimension`](https://eng.uber.com/intrinsic-dimension/) of word-embedding-based text classification tasks, we compare SWEM and CNNs via subspace training in Section 5.1 of the paper. Please follow the instructions in folder [`intrinsic_dimension`](./intrinsic_dimension) to reproduce the results.
+To measure the [*intrinsic dimension*](https://eng.uber.com/intrinsic-dimension/) of word-embedding-based text classification tasks, we compare SWEM and CNNs via subspace training in Section 5.1 of the paper. 
+
+Please follow the instructions in folder [`intrinsic_dimension`](./intrinsic_dimension) to reproduce the results.
 
 ## Citation 
 Please cite our ACL paper in your publications if it helps your research:
