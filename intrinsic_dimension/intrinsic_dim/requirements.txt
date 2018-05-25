@@ -1,9 +1,0 @@
-numpy
-h5py
-IPython
-colorama
-setproctitle
-tensorflow-gpu
-keras
-orderedset
-scikit-learn
