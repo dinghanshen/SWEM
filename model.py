@@ -24,6 +24,7 @@ from utils import normalizing
 from tensorflow.python.ops import nn_ops, math_ops
 import numpy as np
 
+
 def embedding(features, opt, prefix='', is_reuse=None):
     """Customized function to transform batched x into embeddings."""
     # Convert indexes of words into embeddings.
@@ -48,6 +49,22 @@ def embedding(features, opt, prefix='', is_reuse=None):
     return word_vectors, W
 
 
+def aver_emb_encoder(x_emb, x_mask):
+    """ compute the average over all word embeddings """
+    x_mask = tf.expand_dims(x_mask, axis=-1)
+    x_mask = tf.expand_dims(x_mask, axis=-1)  # batch L 1 1
+
+    x_sum = tf.multiply(x_emb, x_mask)  # batch L emb 1
+    H_enc_0 = tf.reduce_sum(x_sum, axis=1, keep_dims=True)  # batch 1 emb 1
+    H_enc = tf.squeeze(H_enc_0, [1, 3])  # batch emb
+    x_mask_sum = tf.reduce_sum(x_mask, axis=1, keep_dims=True)  # batch 1 1 1
+    x_mask_sum = tf.squeeze(x_mask_sum, [2, 3])  # batch 1
+
+    H_enc = H_enc / x_mask_sum  # batch emb
+
+    return H_enc
+
+
 def max_emb_encoder(x_emb, x_mask, opt):
     """ compute the max over every dimension of word embeddings """
     x_mask_1 = tf.expand_dims(x_mask, axis=-1)
@@ -56,7 +73,6 @@ def max_emb_encoder(x_emb, x_mask, opt):
     H_enc = tf.squeeze(H_enc)
 
     return H_enc
-
 
 def concat_emb_encoder(x_emb, x_mask, opt):
     """ concat both the average and max over all word embeddings """
@@ -72,7 +88,6 @@ def concat_emb_encoder(x_emb, x_mask, opt):
     H_enc_1 = H_enc / x_mask_sum  # batch emb
 
     H_enc_2 = tf.nn.max_pool(x_emb, [1, opt.maxlen, 1, 1], [1, 1, 1, 1], 'VALID')
-    #pdb.set_trace()
     H_enc_2 = tf.squeeze(H_enc_2, [1, 3])
 
     H_enc = tf.concat([H_enc_1, H_enc_2], 1)
