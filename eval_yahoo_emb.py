@@ -6,7 +6,7 @@ Baseline Needs More Love: On Simple Word-Embedding-Based Models and Associated P
 """
 
 import os
-GPUID = 0
+GPUID = 1
 os.environ['CUDA_VISIBLE_DEVICES'] = str(GPUID)
 
 import tensorflow as tf
@@ -16,7 +16,7 @@ from tensorflow.contrib import layers
 # from tensorflow.contrib.learn import monitors
 from tensorflow.contrib import framework
 from tensorflow.contrib.learn.python.learn import learn_runner
-from tensorflow.python.platform import tf_logging as logging
+from tensorflow.python.platform import tf_logging as logging 
 # from tensorflow.contrib.learn.python.learn.metric_spec import MetricSpec
 import cPickle
 import numpy as np
